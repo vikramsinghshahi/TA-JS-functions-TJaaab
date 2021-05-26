@@ -107,8 +107,6 @@ isLeapYear(2000);
 
 
 
-
-
 /*
 6. Create a function named `getFactorial` that accepts a number and return the factorial of the number.
 */
