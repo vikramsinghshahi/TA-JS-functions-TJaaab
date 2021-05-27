@@ -38,6 +38,12 @@ function isInRange(a ,b, num) {
     return true;
   }
 }
+
+
+function isInRange(a ,b, num) {
+ return num > a && num < b
+}
+
 // - Execute the function with required parameter
 
 isInRange(1, 20, 9);
@@ -79,6 +85,30 @@ function calculateBMI(weight , height) {
   } 
 
 
+
+
+function calculateBMI(weight , height) {
+
+  let bmi = weight / (height * height)
+  
+  switch(true){
+    case (bmi < 18.5):
+      return `Underweight`;
+     case  ( bmi >= 18.5 && bmi <= 24.9):
+        return `Normal weight`;
+     case (bmi >=25 && bmi <= 29.9 ):
+      return `Overweight`;
+    case (bmi >= 30):
+      return `Obese`;
+     default:
+      alert (`enter a valid input`);
+    }
+  }
+
+
+   
+    
+ 
 /* 3. appropiateDrinks
 
 Create a function that take the age are return the appropiate drink based on these conditions:
